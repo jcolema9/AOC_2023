@@ -16,7 +16,7 @@ import { readFile } from 'fs/promises';
 // }
 
 async function main() {
-  let data = (await readFile('2023/Day1/Day1.txt', { encoding: 'utf8' }))
+  let data = (await readFile('input.txt', { encoding: 'utf8' }))
   let regex = /[1-9]/g
   let array = data.split("\r\n").map(i => {
     return i
